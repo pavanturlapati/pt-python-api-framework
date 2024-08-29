@@ -1,0 +1,23 @@
+[
+    {
+        "endpoint": "https://api.example.com/login",
+        "method": "POST",
+        "headers": {
+            "Content-Type": "application/json"
+        },
+        "body": {
+            "username": "test_user",
+            "password": "password123"
+        },
+        "expected_status": 200
+    },
+    {
+        "endpoint": "https://api.example.com/logout",
+        "method": "POST",
+        "headers": {
+            "Authorization": "Bearer abc123"
+        },
+        "body": {},
+        "expected_status": 204
+    }
+]
